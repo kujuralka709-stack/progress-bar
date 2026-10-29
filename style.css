@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f6fc;
+    color: #24324d;
+    line-height: 1.6;
+}
+
+.hero {
+    background: linear-gradient(135deg, #243b80, #536de8);
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.hero p {
+    font-size: 16px;
+}
+
+main {
+    padding: 45px 20px;
+}
+
+.skills-section {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.section-description {
+    text-align: center;
+    color: #69758c;
+    margin-bottom: 30px;
+}
+
+.skill {
+    margin-bottom: 25px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 9px;
+    font-weight: bold;
+}
+
+.progress-track {
+    height: 14px;
+    background: #e5eaf4;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #4568dc, #8a5cf6);
+    transition: width 1.5s ease-in-out;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #69758c;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    main {
+        padding: 25px 14px;
+    }
+
+    .skills-section {
+        padding: 22px 18px;
+    }
+
+    .skills-section h2 {
+        font-size: 23px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .progress-bar {
+        transition: none;
+    }
+}
